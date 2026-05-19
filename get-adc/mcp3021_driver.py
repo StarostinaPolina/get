@@ -25,7 +25,7 @@ class MCP3021:
         return number
 
     def get_voltage(self):
-        return self.get_number() / 4095 * self.dynamic_range
+        return self.get_number() / 1023 * self.dynamic_range
 
 
 if __name__ == "__main__":
